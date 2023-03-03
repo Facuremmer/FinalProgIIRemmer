@@ -34,42 +34,49 @@ namespace TPFinalProgII.Menus
                             {
                                 AllRegisteredPeople RegisteredPersons = new AllRegisteredPeople();
                                 RegisteredPersons.RegisteredPersonsList();
+                                exit = true;
                                 break;
                             }
                         case 2:
                             {
                                 CertainRegisteredPerson Person = new CertainRegisteredPerson();
                                 Person.SpecifyPersonList();
+                                exit = true;
                                 break;
                             }
                         case 3:
                             {
                                 AllAppliedVaccines VaccinatedPerson = new AllAppliedVaccines();
                                 VaccinatedPerson.VaccinatedPersonList();
+                                exit = true;
                                 break;
                             }
                         case 4:
                             {
                                 CertainVaccinatedPerson Person = new CertainVaccinatedPerson();
                                 Person.SpecifyVaccinatedPersonList();
+                                exit = true;
                                 break;
                             }
                         case 5:
                             {
                                 DosesAppliedBetweenDates DosesApplied = new DosesAppliedBetweenDates();
                                 DosesApplied.DosesAppliedBetweenTowDates();
+                                exit = true;
                                 break;
                             }
                         case 6:
                             {
                                 DosisApliedType TotalDosesApplied = new DosisApliedType();
                                 TotalDosesApplied.TotalDosesAppliedOfEachType();
+                                exit = true;
                                 break;
                             }
                         case 0:
                             {
                                 MainMenu menu = new MainMenu();
                                 menu.MainMenuNavegation();
+                                exit = true;
                                 break;
                             }
                     }

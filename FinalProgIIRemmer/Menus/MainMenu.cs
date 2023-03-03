@@ -31,12 +31,14 @@ namespace TPFinalProgII.Menus
 
                                 RecordMenu menu = new RecordMenu();
                                 menu.MenuRecord();
+                                exit = true;
                                 break;
                             }
                         case 2:
                             {
                                 InformationMenu menu = new InformationMenu();
                                 menu.MenuInformation();
+                                exit = true;
                                 break;
                             }
                         case 3:
@@ -44,6 +46,7 @@ namespace TPFinalProgII.Menus
 
                                 DeleteMenu menu = new DeleteMenu();
                                 menu.MenuDelete();
+                                exit = true;
                                 break;
                             }
                         case 0:

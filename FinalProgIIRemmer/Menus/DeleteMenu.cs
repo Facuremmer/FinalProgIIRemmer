@@ -30,18 +30,21 @@ namespace TPFinalProgII.Menus
                             {
                                 DeletePerson personDelete = new DeletePerson();
                                 personDelete.PersonDelete();
+                                exit = true;
                                 break;
                             }
                         case 2:
                             {
                                 DeleteVaccinationRecord vaccinationRecordDelete = new DeleteVaccinationRecord();
                                 vaccinationRecordDelete.VaccinationRecordDelete();
+                                exit = true;
                                 break;
                             }
                         case 0:
                             {
                                 MainMenu menu = new MainMenu();
                                 menu.MainMenuNavegation();
+                                exit = true;
                                 break;
                             }
                     }

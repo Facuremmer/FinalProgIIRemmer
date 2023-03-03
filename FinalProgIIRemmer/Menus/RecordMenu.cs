@@ -30,18 +30,21 @@ namespace TPFinalProgII.Menus
                             {
                                 AddPerson Person = new AddPerson();
                                 Person.RegisteredPersons();
+                                exit = true;
                                 break;
                             }
                         case 2:
                             {
                                 AddVaccine newVaccine = new AddVaccine();
                                 newVaccine.RegisteredVaccine();
+                                exit = true;
                                 break;
                             }
                         case 0:
                             {
                                 MainMenu menu = new MainMenu();
                                 menu.MainMenuNavegation();
+                                exit = true;
                                 break;
                             }
                     }
