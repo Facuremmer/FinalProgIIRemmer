@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Threading;
 using AcceptedDataFormat;
+using FinalProgIIRemmer.CancelProcess;
 
 namespace TPFinalProgII.Menus
 {
@@ -31,14 +32,12 @@ namespace TPFinalProgII.Menus
 
                                 RecordMenu menu = new RecordMenu();
                                 menu.MenuRecord();
-                                exit = true;
                                 break;
                             }
                         case 2:
                             {
                                 InformationMenu menu = new InformationMenu();
                                 menu.MenuInformation();
-                                exit = true;
                                 break;
                             }
                         case 3:
@@ -46,13 +45,12 @@ namespace TPFinalProgII.Menus
 
                                 DeleteMenu menu = new DeleteMenu();
                                 menu.MenuDelete();
-                                exit = true;
                                 break;
                             }
                         case 0:
                             {
-                                Console.WriteLine("Cerrando aplicacion... \nGracias por elegirnos.");
-                                exit = true;
+                                CancelProcess abortProcesses = new CancelProcess();
+                                abortProcesses.ProcessCancel();
                                 break;
                             }
                     }
